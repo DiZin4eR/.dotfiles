@@ -1,0 +1,11 @@
+{
+    "custom/distrologo": {
+        "format": "{icon}",
+        "tooltip-format": "I'm using Arch BTW",
+        "tooltip": true,
+        "format-icons": {
+            "default": "󰣇"
+        },
+        "on-click": "rofi -show drun"
+    }
+}

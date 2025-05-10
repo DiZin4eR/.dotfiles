@@ -1,0 +1,46 @@
+/*
+    Author: Dmytro Zinchuk 
+    Nick: Di_Zin4eR
+     ____  ____       ____  ____  _  _  __  ____  ____ 
+    (  _ \(_  _)     (_   )(_  _)( \( )/. |( ___)(  _ \
+     )(_) )_)(_  ___  / /_  _)(_  )  ((_  _))__)  )   /
+    (____/(____)(___)(____)(____)(_)\_) (_)(____)(_)\_)
+
+    Telegram: @d_zinchuk
+    Github: https://github.com/DiZin4eR
+    LinkedIn: www.linkedin.com/in/dmytro-zinchuk-599a6734b
+*/
+
+@import "/home/windel/.cache/wal/colors-waybar.css";
+
+@define-color main-color @color11;
+@define-color main-color-lighter @color15;
+@define-color sub-main-color @color3;
+@define-color btn-hov lighter(@background);
+
+* {
+	background-image: none;
+	box-shadow: none;
+	font: 36 miracode;
+}
+
+window {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+button {
+    font-size: 32px;
+    background-size: 25%;
+    padding-bottom: 125px;
+    margin: 10px;
+    border-radius: 32px;
+    background-color: @background;
+    border: 2px solid alpha(@main-color, 0.45);
+    color: @main-color;
+}
+
+button:focus, button:active, button:hover {
+	background-color: alpha(@main-color-lighter, 0.45);
+	border: 2px solid alpha(@main-color-lighter, 0.2);
+	color: rgba(0.1, 0.1, 0.1, 0.8);
+	outline-style: none;
+}

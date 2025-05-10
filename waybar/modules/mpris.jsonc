@@ -1,0 +1,6 @@
+{
+    "mpris": {
+        "format": "{artist} - {title}",
+        "max-length": 40
+    }
+}

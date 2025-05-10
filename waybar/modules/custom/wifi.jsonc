@@ -1,0 +1,7 @@
+{
+    "custom/wifi": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "nm-connection-editor"
+    }
+}

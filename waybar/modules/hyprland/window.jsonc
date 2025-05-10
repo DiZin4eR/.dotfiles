@@ -1,0 +1,14 @@
+{
+    "hyprland/window": {
+        "format": "󰣆 {title}",
+        "max-length": 30,
+        "separate-outputs": false,
+        "rewrite": {
+            "^.*( - Vivaldi| - Mozilla Firefox|Firefox| - Firefox)$": " Browser",
+            "^.*~.*$": " windel",
+            "^.*bash.*$": " usr/bin/bash",
+            "󰣆 ": " Empty",
+            "^.*( - Code| - Code - OSS)$": "VS - Code"
+        }
+    }
+}

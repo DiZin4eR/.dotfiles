@@ -1,0 +1,7 @@
+{
+    "custom/bluetooth": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "blueberry"
+    }
+}
