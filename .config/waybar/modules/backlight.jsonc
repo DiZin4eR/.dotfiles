@@ -1,0 +1,18 @@
+{
+    "backlight": {
+        "format": "{icon}",
+        "format-alt": "{percent}%",
+        "tooltip": false,
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    }
+}

@@ -1,0 +1,16 @@
+{ 
+  "include": [
+    "~/.config/waybar/modules/hyprland/window.jsonc",
+    "~/.config/waybar/modules/hyprland/workspaces.jsonc",
+    "~/.config/waybar/modules/hyprland/language.jsonc",
+    "~/.config/waybar/modules/custom/distrologo.jsonc",
+    "~/.config/waybar/modules/custom/power.jsonc",
+    "~/.config/waybar/modules/custom/wifi.jsonc",
+    "~/.config/waybar/modules/custom/bluetooth.jsonc",
+    "~/.config/waybar/modules/clock.jsonc",
+    "~/.config/waybar/modules/audio.jsonc",
+    "~/.config/waybar/modules/mpris.jsonc",
+    "~/.config/waybar/modules/battery.jsonc",
+    "~/.config/waybar/modules/backlight.jsonc"
+  ]
+}

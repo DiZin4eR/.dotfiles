@@ -1,0 +1,142 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+@define-color main-color @color11;
+@define-color main-color-lighter @color15;
+@define-color sub-main-color @color3;
+@define-color btn-hov lighter(@background);
+
+* {
+  border: none;
+  border-radius: 0;
+  font: 20px "Hurmit Nerd Font";
+  font-weight: bolder;
+  box-shadow: none;
+  text-shadow: none;
+  color: @main-color;
+}
+
+tooltip {
+  border-radius: 15px;
+  color: @main-color;
+  background-color: alpha(@background, 0.8);
+  border: 2px solid alpha(@main-color, 0.45);
+}
+
+window#waybar {
+  background-color: transparent;
+  /* background-color: alpha(@background, 0.8); */
+  /* border-bottom: 2px solid @main-color; */
+}
+
+
+#custom-bluetooth,
+#custom-distrologo,
+#custom-power,
+#custom-wifi,
+#language,
+#audio,
+#backlight,
+#battery,
+#window,
+#workspaces,
+#mpris,
+#clock {
+  background: alpha(@background, 0.8);
+  border-radius: 10px;
+  padding: 0 10px 0 10px;
+  border: 2px solid alpha(@main-color, 0.45);
+  transition: 0.3s; 
+}
+
+#custom-distrologo,
+#window,
+#workspaces {
+  margin: 10px 0 0 10px;
+}
+
+#custom-bluetooth,
+#custom-power,
+#custom-wifi,
+#language,
+#audio,
+#battery,
+#backlight,
+#clock {
+  margin: 10px 10px 0 0;
+}
+
+#mpris {
+  margin: 10px 10px 0 10px;
+  padding: 0 10px 0 10px;
+}
+
+#backlight {
+  padding-right: 12px;
+}
+
+#custom-distrologo {
+  padding-right: 15px;
+}
+
+#custom-power {
+  padding-right: 14px;
+}
+
+#custom-volumeicon {
+  padding-right: 6px;
+}
+
+#language {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#battery {
+  padding-right: 10px;
+}
+
+#custom-wifi {
+  padding-right: 20px;
+}
+
+#custom-bluetooth:hover,
+#custom-distrologo:hover,
+#custom-power:hover,
+#custom-wifi:hover,
+#language:hover,
+#audio:hover,
+#backlight:hover,
+#battery:hover,
+#mpris:hover,
+#clock:hover {
+  border: 2px solid alpha(@main-color-lighter, 0.45);
+  color: @main-color-lighter;
+  transition: 0.3s; 
+}
+
+#workspaces {
+  padding: 0;
+}
+
+#workspaces:hover {
+  border: 2px solid alpha(@main-color-lighter, 0.45);
+  color: @main-color-lighter;
+  transition: 0.3s;
+}
+
+#workspaces button {
+  padding: 2px 7px 2px 0px;
+  border-radius: 8px;
+}
+
+#workspaces button.active {
+  padding: 2px 7px 2px 5px;
+  border-radius: 8px;
+}
+
+#workspaces button:hover {
+  background-color: alpha(@main-color-lighter, 0.25);
+  color: @main-color-lighter;
+}
+
+

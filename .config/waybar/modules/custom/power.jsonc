@@ -1,0 +1,7 @@
+{
+    "custom/power": {
+        "format": "<span rise='-16pt'>⏻</span>",
+        "tooltip": false,
+        "on-click": "wlogout"
+    }
+}

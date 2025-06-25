@@ -1,0 +1,42 @@
+{
+    "pulseaudio#input": {
+        "format": " {format_source}%",
+        "format-source": "{volume}",
+        "format-source-muted": "{}",
+        "on-scroll-up": "sh -c 'vol=$(pactl get-source-volume @DEFAULT_SOURCE@ | grep -oP \"\\d+(?=%)\" | head -1); if [ \"$vol\" -lt 100 ]; then pactl set-source-volume @DEFAULT_SOURCE@ +5%; fi'",
+        "on-scroll-down": "pactl set-source-volume @DEFAULT_SOURCE@ -5%",
+        "max-volume": "100",
+        "on-click": "pactl set-source-mute @DEFAULT_SOURCE@ toggle",
+        "tooltip-format": "{source_desc}"
+    },
+    "pulseaudio#output": {
+        "format": " {icon} {volume}% ",
+        "format-muted": "  Muted ",
+        "format-icons": {
+            "default": [
+                "\uf026", // 0%
+                "\uf027", // 1-49%
+                "\uf028" // 50-100%
+            ]
+        },
+        "scroll-step": 5,
+        "max-volume": 150,
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+    "custom/volumeicon": {
+        "format": ""
+    },
+    "group/audio": {
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "not-power",
+            "transition-left-to-right": false
+        },
+        "orientation": "horizontal",
+        "modules": [
+            "custom/volumeicon",
+            "pulseaudio#input",
+            "pulseaudio#output"
+        ]
+    }
+}

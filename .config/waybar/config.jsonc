@@ -1,0 +1,29 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin": 0,
+  "fixed-center": true,
+  "reload_style_on_change": true,
+  "height": 30,
+  "include": ["~/.config/waybar/modules.jsonc"],
+  "modules-left": [
+    "custom/distrologo",
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  
+  "modules-center": [
+    "mpris"
+  ],
+
+  "modules-right": [
+    "hyprland/language",
+    "group/audio",
+    "backlight",
+    "battery",
+    "custom/bluetooth",
+    "custom/wifi",
+    "clock",
+    "custom/power"
+  ]
+}
